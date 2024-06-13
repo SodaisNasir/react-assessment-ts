@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { AlignJustifyIcon } from "lucide-react";
 import { usePageTitle } from "@/hooks";
 import { navLinks } from "@/constants";
-import { Logo } from "@/assets/images";
+import { ViteIcon } from "@/assets/icons";
 import { cn } from "@/lib/utils";
 
 import {
@@ -30,7 +30,7 @@ export default function Navbar() {
         </SheetTrigger>
         <SheetContent side="left">
           <SheetHeader>
-            <img className="w-full max-w-48" src={Logo} alt="logo" />
+            <img className="w-full max-w-10" src={ViteIcon} alt="vite logo" />
           </SheetHeader>
 
           <br />
@@ -62,7 +62,7 @@ function Navlinks() {
             )
           }
         >
-          <link.Icon className="text-2xl" />
+          <link.Icon className="text-xl" />
           {link.label}
         </NavLink>
       ))}
